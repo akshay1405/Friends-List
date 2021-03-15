@@ -1,6 +1,5 @@
 {
   "homepage":"http://akshay1405.github.io/Friends-List",
-  "name": "friendslist",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

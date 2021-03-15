@@ -39,7 +39,7 @@ const App = (props) => {
     }
 }
   const addfrnd = (input)=>{
-
+      if(input !== ""){
       let exist = search(input,mainData);
       if(exist) {alert("Friend is already in list")
       document.getElementById("addfrnd").value = "";
@@ -52,6 +52,7 @@ const App = (props) => {
         alert("New friend is added to list");
       }
   }
+}
 
   const deleteItem = (index)=>{
     if(window.confirm("Are you sure you want to delete this friend")) { 

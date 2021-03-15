@@ -50,7 +50,7 @@ const FriendList = (props) =>{
              <tr><td style={{textAlign: 'left',paddingLeft: '7px',backgroundColor: '#D3D3D3'}}>Friends List</td></tr>
             <tr style={rows}><Search change={(ev) =>onSearch(ev)}></Search></tr>
         {filterData.map((val,index)=>{
-            return <tr style={rows} key={val.id}>{val.name}  <a  style={{float:'right','marginRight': '3%'}} key={val.name} onClick ={()=>props.delete(val.name)}> <img src={logo} /> </a> <a  style={{float:'right','marginRight': '7%'}} key={val.id} onClick={()=>props.favourite(val.name)}> {val.favourite ? <img src={selectedfav} /> : <img src={unselectedfav} />} </a></tr>
+            return <tr style={rows} key={val.id}>{val.name}<a  style={{float:'right','marginRight': '3%'}} key={val.name} onClick ={()=>props.delete(val.name)}><img src={logo} /></a><a style={{float:'right','marginRight': '7%'}} key={val.id} onClick={()=>props.favourite(val.name)}>{val.favourite ? <img src={selectedfav} /> : <img src={unselectedfav} />}</a></tr>
         })}
          </tbody>
         </table>

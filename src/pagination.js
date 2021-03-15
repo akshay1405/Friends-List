@@ -15,7 +15,7 @@ return(
     <ul className="pg-numbers">
         {pageNumber.map(number=>{
            return <li key={number} >
-                <a onClick={()=>{props.paginate(number)}} href='!#' >
+                <a onClick={()=>{props.paginate(number)}} href='javascript:void(0)' >
                     {number}
                     </a> 
             </li>
